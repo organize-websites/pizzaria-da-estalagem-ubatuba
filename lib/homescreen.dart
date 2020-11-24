@@ -1011,7 +1011,7 @@ class _PoliticaDePrivacidadeState extends State<PoliticaDePrivacidade> {
 }
 
 _launchURL() async {
-  const url = 'http://wa.me/5512988782332&text=';
+  const url = 'https://api.whatsapp.com/send?phone=5512988782332&text=';
   if (await canLaunch(url)) {
     await launch(url);
   } else {
@@ -1020,7 +1020,7 @@ _launchURL() async {
 }
 
 _launchURL3() async {
-  const url = 'instagram://user?username=pizzariadaestalagem';
+  const url = 'https://www.instagram.com/pizzariadaestalagem/';
   if (await canLaunch(url)) {
     await launch(url);
   } else {
